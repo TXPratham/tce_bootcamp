@@ -44,8 +44,8 @@ else:
 discount_amount=total_bill*discount_percent/100
 final_amount=total_bill-discount_amount
 
-customer={"\nName":customer_name,"ID":customer_id}
-
+customer={"Name":customer_name,"ID":customer_id}
+print()
 print("Customer Name:",customer["Name"])
 print("Customer ID:",customer["ID"])
 print("Purchased Items")
