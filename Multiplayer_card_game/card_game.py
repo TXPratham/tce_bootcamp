@@ -8,7 +8,6 @@ random.shuffle(deck)
 while True:
     try:
         players=int(input("Enter number of players= "))
-
         if players>0 and 52%players==0:
             break
         else:
