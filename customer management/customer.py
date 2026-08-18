@@ -48,14 +48,17 @@ customer={"Name":customer_name,"ID":customer_id}
 print()
 print("Customer Name:",customer["Name"])
 print("Customer ID:",customer["ID"])
+print()
 print("Purchased Items")
 
 for item in items:
+    print()
     print("Item:",item[0])
     print("Quantity:",item[1])
     print("Unit Price:",item[2])
     print("Total Price:",item[3])
 
+print()
 print("Total Bill:",total_bill)
 print("Discount:",discount_percent,"%")
 print("Discount Amount:",discount_amount)
