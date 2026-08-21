@@ -8,7 +8,7 @@ random.shuffle(deck)
 while True:
     try:
         players=int(input("Enter number of players= "))
-        if players>0 and 52%players==0:
+        if 2<=players<=52:
             break
         else:
             print("Invalid number of players.")
@@ -16,18 +16,17 @@ while True:
         print("Please enter a number.")
 
 cards_per_player=52//players
-hands=[]
+hands = []
 
 for i in range(players):
-    player_cards=[]
+    player_cards = []
     for j in range(cards_per_player):
-        card=deck.pop()
+        card = deck.pop()
         player_cards.append(card)
     hands.append(player_cards)
 
-scores=[]
-for i in range(players):
-    scores.append(0)
+
+scores = [0] * players
 
 print("Game Started")
 print(f"Each player gets {cards_per_player} cards.")
