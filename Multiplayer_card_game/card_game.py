@@ -30,12 +30,15 @@ scores = [0] * players
 
 print("Game Started")
 print(f"Each player gets {cards_per_player} cards.")
+
 for round_number in range(cards_per_player):
     print("\nRound",round_number+1)
+
     for i in range(players):
         card=random.choice(hands[i])
         hands[i].remove(card)
         print(f"Player {i+1} : {card}")
+
     while True:
         try:
             winner=int(input("Enter the winning player number: "))
@@ -46,8 +49,11 @@ for round_number in range(cards_per_player):
                 print("Invalid player number.")
         except ValueError:
             print("Please enter a number.")
+
 print("\nFinal Scores")
+
 for i in range(players):
+    
     print(f"Player {i+1}:{scores[i]} rounds won")
 highest_score=max(scores)
 winner=scores.index(highest_score)
