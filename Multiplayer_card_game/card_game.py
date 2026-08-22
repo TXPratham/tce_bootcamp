@@ -47,6 +47,9 @@ for round_number in range(cards_per_player):
         hands[i].remove(card)
         print(f"Player {i+1} : {card}")
 
+#player1--postion 0
+#player2--position 1...
+#score[0]=player1
     while True:
         try:
             winner=int(input("Enter the winning player number: "))
