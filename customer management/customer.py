@@ -12,16 +12,14 @@ for i in range(number_of_items):
     if quantity<=0:
         print("Invalid quantity")
         quantity=1
-    else:
-        pass
+  
 
     price=float(input("Enter price per unit: "))
 
     if price<=0:
         print("Invalid price")
         price=0
-    else:
-        pass
+   
 
     total_price=quantity*price
     item=(item_name,quantity,price,total_price)
