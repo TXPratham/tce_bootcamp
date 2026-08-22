@@ -29,30 +29,23 @@ INSERT INTO Employee VALUES
 
 SELECT * FROM Employee;
 
-SELECT DISTINCT DepartmentName
-FROM Department;
+SELECT DISTINCT DepartmentName FROM Department;
 
-SELECT EmployeeID,EmployeeName,Salary
-FROM Employee
-WHERE Salary>50000;
+SELECT EmployeeID,EmployeeName,Salary FROM Employee WHERE Salary>50000;
 
 SELECT e.EmployeeName,d.DepartmentName
 FROM Employee e
 INNER JOIN Department d ON e.DepartmentID=d.DepartmentID
 WHERE d.DepartmentName='IT';
 
-SELECT EmployeeName,Salary
-FROM Employee
-WHERE Salary BETWEEN 40000 AND 60000;
+SELECT EmployeeName,Salary FROM Employee WHERE Salary BETWEEN 40000 AND 60000;
 
 SELECT e.EmployeeName,d.DepartmentName
 FROM Employee e
 INNER JOIN Department d ON e.DepartmentID=d.DepartmentID
 WHERE d.DepartmentName IN('IT','Finance');
 
-SELECT EmployeeName,Salary
-FROM Employee
-ORDER BY Salary DESC;
+SELECT EmployeeName,Salary FROM Employee ORDER BY Salary DESC;
 
 SELECT e.EmployeeName,e.Salary,d.DepartmentName
 FROM Employee e
