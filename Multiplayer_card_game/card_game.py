@@ -5,6 +5,14 @@ card_suits=["Hearts","Diamonds","Clubs","Spades"]
 deck=[rank+" "+suit for rank in card_ranks for suit in card_suits]
 random.shuffle(deck)
 
+
+# deck=[]
+
+# for rank in card_ranks[]:
+#     for suit in card_suits[]:
+#         deck.append(rank+" "+suit)
+
+
 while True:
     try:
         players=int(input("Enter number of players= "))
